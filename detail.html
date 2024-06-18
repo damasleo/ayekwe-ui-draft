@@ -9,15 +9,21 @@
 
     <style type="text/css">
       body {
-        background-color: #F8F9F9;
         line-height: 1.5;
         font-family: Arial, sans-serif;
         font-size: clamp(0.938rem, 2vw, 1rem)
       }
+
+      body {
+          background-color: #F8F9F9;
+      }
+      .dark body {
+          background-color: #4B5563; /* Corresponds to gray-600 in Tailwind */
+      }
     </style>
 
   </head>
-  <body class="dark:bg-gray-800">
+  <body>
     <!-- <button
       data-drawer-target="logo-sidebar"
       data-drawer-toggle="logo-sidebar"
