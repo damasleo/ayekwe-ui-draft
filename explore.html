@@ -264,20 +264,88 @@
     <div class="p-0 pt-2 mt-16 sm:mt-0 sm:p-4 sm:ml-64">
       
         
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-2">
-  <!-- Main content area (2/3 of the width on large screens, full width on smaller screens) -->
-  <div class="lg:col-span-2">
+<div class="grid grid-cols-1 lg:grid-cols-1 gap-4 mb-2">
 
-    <div class="hidden sm:block md:flex mt-4">
-      <ul class="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
-        <li>
-          <a href="#" class="border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 inline-flex items-center px-4 py-2 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"><svg class="flex-shrink-0 w-6 h-6 text-gray-800 dark:text-white mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/></svg>What's happening?</a>
-        </li>
-      </ul>
+
+
+
+<form class="px-2">   
+    <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+        <input type="search" id="search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
+        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
     </div>
+</form>
 
 
-    <!-- Example of a post card similar to Facebook -->
+
+
+<div class="mb-2 shadow-none px-2">
+  <ul class="flex text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+    <li class="me-2 w-full" role="presentation">
+      <button class="inline-block w-full p-4 border-b-2 rounded-t-lg transition duration-75" id="hashtags-tab" data-tabs-target="#hashtags" type="button" role="tab" aria-controls="hashtags" aria-selected="false">Hashtags</button>
+    </li>
+    <li class="me-2 w-full" role="presentation">
+      <button class="inline-block w-full p-4 border-b-2 rounded-t-lg transition duration-75 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="posts-tab" data-tabs-target="#posts" type="button" role="tab" aria-controls="posts" aria-selected="false">Posts</button>
+    </li>
+    <li class="me-2 w-full" role="presentation">
+      <button class="inline-block w-full p-4 border-b-2 rounded-t-lg transition duration-75 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="people-tab" data-tabs-target="#people" type="button" role="tab" aria-controls="people" aria-selected="false">People</button>
+    </li>
+    <li class="w-full" role="presentation">
+      <button class="inline-block w-full p-4 border-b-2 rounded-t-lg transition duration-75 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="pages-tab" data-tabs-target="#pages" type="button" role="tab" aria-controls="pages" aria-selected="false">Pages</button>
+    </li>
+  </ul>
+</div>
+<div id="default-tab-content">
+    <div class="hidden px-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="hashtags" role="tabpanel" aria-labelledby="hashtags-tab">
+
+<ul class="space-y-1 text-gray-500 list-none list-inside dark:text-gray-400">
+  <li class="py-2">#Ayekwe</li>
+  <li class="py-2">#Bangui</li>
+  <li class="py-2">#RCA</li>
+  <li class="py-2">#SocialMedia</li>
+  <li class="py-2">#Bangui236</li>
+  <li class="py-2">#Sport</li>
+  <li class="py-2">#BanguiMall</li>
+  <li class="py-2">#AyekweTech</li>
+  <li class="py-2">#Ayekwe236</li>
+  <li class="py-2">#Centros</li>
+  <li class="py-2">#Centro236</li>
+  <li class="py-2">#Hashtags</li>
+  <li class="py-2">#Sango</li>
+  <li class="py-2">#Connect</li>
+  <li class="py-2">#Promote</li>
+  <li class="py-2">#Explore</li>
+  <li class="py-2">#Information</li>
+  <li class="py-2">#Interaction</li>
+  <li class="py-2">#BusinessPage</li>
+  <li class="py-2">#E-commerce</li>
+  <li class="py-2">#Sharing</li>
+  <li class="py-2">#Bangui</li>
+  <li class="py-2">#RCA</li>
+  <li class="py-2">#Africa</li>
+  <li class="py-2">#African</li>
+  <li class="py-2">#SocialPlatform</li>
+  <li class="py-2">#SocialNetwork</li>
+  <li class="py-2">#SocialPplatform</li>
+  <li class="py-2">#Marketplace</li>
+  <li class="py-2">#Community</li>
+  <li class="py-2">#Collaboration</li>
+  <li class="py-2">#PublicInformation</li>
+  <li class="py-2">#LocalBusinesses</li>
+  <li class="py-2">#Tourism</li>
+  <li class="py-2">#Networking</li>
+</ul>
+
+    </div>
+    <div class="hidden sm:px-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+
+
     <div class="bg-white dark:bg-gray-800 rounded shadow-none p-4 mb-2 sm:mt-4" style="box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);">
       <div class="flex-1">
         <div class="flex items-center justify-between">
@@ -349,290 +417,101 @@
       </div>
     </div>
 
-    <!-- Add more post content items here -->
-    <div class="bg-white dark:bg-gray-800 rounded shadow-none p-4 mb-2 sm:mt-4" style="box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);">
-      <div class="flex-1">
-        <div class="flex items-center justify-between">
-          <a href="#" class="flex items-start">
-            <img class="w-10 h-10 rounded mr-4" src="static/placeholder.png" alt="User avatar">
-            <div>
-              <h3 class="text-m font-semibold text-gray-900 dark:text-white">
-                Username <span class="inline-flex text-sm font-medium text-blue-500 items-center">
-                  @derkos 
-                  <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg>
-                </span>
-              </h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">2h • <span class="text-blue-500">#Public</span></p>
-            </div>
-          </a>
 
-          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots1" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-full hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 4 15">
-          <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
-          </svg>
-          </button>
-
-          <!-- Dropdown menu -->
-          <div id="dropdownDots1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Share</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Repost</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
-                </li>
-              </ul>
-              <div class="py-2">
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit Post</a>
-              </div>
-          </div>
-
-
-        </div>
-        <p class="mt-2 text-gray-900 dark:text-white">This is an example post content similar to what you would see on Facebook. It can include text, hashtags, links, and images.</p>
-
-        <span class="text-blue-500">#Ayekwe #RCA #Bangui #Public</span>
-
-        <a href="detail.html"><img class="rounded-lg mt-2" style="height: auto;width: 100%;background-size: cover;background-repeat: no-repeat;" src="static/02.jpg" alt="image description"></a>
-
-        <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">100 likes • 24 comments • reposted</p>
-
-        <div class="flex items-center justify-between">
-          <div class="flex items-center mt-2 text-gray-500 dark:text-gray-400">
-            <div class="flex items-center mr-6">
-              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/></svg>
-            </div>
-            <div class="flex items-center mr-6">
-              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/></svg>
-            </div>
-
-          </div>
-          <div class="flex items-center">
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 21-5-4-5 4V3.889a.92.92 0 0 1 .244-.629.808.808 0 0 1 .59-.26h8.333a.81.81 0 0 1 .589.26.92.92 0 0 1 .244.63V21Z"/></svg>
-          </div>
-        </div>
-
-      </div>
     </div>
-
-    <div class="bg-white dark:bg-gray-800 rounded shadow-none p-4 mb-2 sm:mt-4" style="box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);">
-      <div class="flex-1">
-        <div class="flex items-center justify-between">
-          <a href="#" class="flex items-start">
-            <img class="w-10 h-10 rounded mr-4" src="static/placeholder.png" alt="User avatar">
-            <div>
-              <h3 class="text-m font-semibold text-gray-900 dark:text-white">
-                Username <span class="inline-flex text-sm font-medium text-blue-500 items-center">
-                  @derkos 
-                  <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg>
-                </span>
-              </h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">2h • <span class="text-blue-500">#Public</span></p>
-            </div>
-          </a>
-
-          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots1" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-full hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 4 15">
-          <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
-          </svg>
-          </button>
-
-          <!-- Dropdown menu -->
-          <div id="dropdownDots1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Share</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Repost</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
-                </li>
-              </ul>
-              <div class="py-2">
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit Post</a>
-              </div>
-          </div>
+    <div class="hidden px-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="people" role="tabpanel" aria-labelledby="people-tab">
 
 
-        </div>
-        <p class="mt-2 text-gray-900 dark:text-white">This is an example post content similar to what you would see on Facebook. It can include text, hashtags, links, and images.</p>
-
-        <span class="text-blue-500">#Ayekwe #RCA #Bangui #Public</span>
-
-        <a href="detail.html"><img class="rounded-lg mt-2" style="height: auto;width: 100%;background-size: cover;background-repeat: no-repeat;" src="static/03.jpg" alt="image description"></a>
-
-        <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">100 likes • 24 comments • reposted</p>
-
-        <div class="flex items-center justify-between">
-          <div class="flex items-center mt-2 text-gray-500 dark:text-gray-400">
-            <div class="flex items-center mr-6">
-              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/></svg>
-            </div>
-            <div class="flex items-center mr-6">
-              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/></svg>
-            </div>
-
-          </div>
-          <div class="flex items-center">
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 21-5-4-5 4V3.889a.92.92 0 0 1 .244-.629.808.808 0 0 1 .59-.26h8.333a.81.81 0 0 1 .589.26.92.92 0 0 1 .244.63V21Z"/></svg>
-          </div>
-        </div>
-
-      </div>
+<ul class="divide-y divide-gray-200 dark:divide-gray-700">
+  <li class="pb-3 sm:pb-4">
+    <div class="flex items-center space-x-4 rtl:space-x-reverse">
+       <div class="flex-shrink-0">
+          <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
+       </div>
+       <div class="flex-1 min-w-0">
+          <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+            Neil Sims 
+            <span class="inline-flex text-sm font-medium text-blue-500 items-center">@derkos <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></span>
+          </p>
+          <p class="text-sm text-gray-500 truncate dark:text-gray-400">Kampala, Uganda</p>
+       </div>
+       <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+          <button id="dropdownMenuIconHorizontalButton" data-dropdown-toggle="dropdownDotsHorizontal" class="inline-flex items-center px-2 py-1 text-sm font-medium text-center text-gray-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3"><path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></svg></button>
+       </div>
     </div>
-
-    <div class="bg-white dark:bg-gray-800 rounded shadow-none p-4 mb-2 sm:mt-4" style="box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);">
-      <div class="flex-1">
-        <div class="flex items-center justify-between">
-          <a href="#" class="flex items-start">
-            <img class="w-10 h-10 rounded mr-4" src="static/placeholder.png" alt="User avatar">
-            <div>
-              <h3 class="text-m font-semibold text-gray-900 dark:text-white">
-                Username <span class="inline-flex text-sm font-medium text-blue-500 items-center">
-                  @derkos 
-                  <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg>
-                </span>
-              </h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">2h • <span class="text-blue-500">#Public</span></p>
-            </div>
-          </a>
-
-          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots1" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-full hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 4 15">
-          <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
-          </svg>
-          </button>
-
-          <!-- Dropdown menu -->
-          <div id="dropdownDots1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Share</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Repost</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
-                </li>
-                <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
-                </li>
-              </ul>
-              <div class="py-2">
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit Post</a>
-              </div>
-          </div>
-
-
-        </div>
-        <p class="mt-2 text-gray-900 dark:text-white">This is an example post content similar to what you would see on Facebook. It can include text, hashtags, links, and images.</p>
-
-        <span class="text-blue-500">#Ayekwe #RCA #Bangui #Public</span>
-
-        <a href="detail.html"><img class="rounded-lg mt-2" style="height: auto;width: 100%;background-size: cover;background-repeat: no-repeat;" src="static/04.jpg" alt="image description"></a>
-
-        <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">100 likes • 24 comments • reposted</p>
-
-        <div class="flex items-center justify-between">
-          <div class="flex items-center mt-2 text-gray-500 dark:text-gray-400">
-            <div class="flex items-center mr-6">
-              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/></svg>
-            </div>
-            <div class="flex items-center mr-6">
-              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/></svg>
-            </div>
-
-          </div>
-          <div class="flex items-center">
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 21-5-4-5 4V3.889a.92.92 0 0 1 .244-.629.808.808 0 0 1 .59-.26h8.333a.81.81 0 0 1 .589.26.92.92 0 0 1 .244.63V21Z"/></svg>
-          </div>
-        </div>
-
-      </div>
+  </li>
+  <li class="py-3 sm:py-4">
+    <div class="flex items-center space-x-4 rtl:space-x-reverse">
+       <div class="flex-shrink-0">
+          <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
+       </div>
+       <div class="flex-1 min-w-0">
+          <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+            Bonnie Green
+            <span class="inline-flex text-sm font-medium text-blue-500 items-center">@derkos <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></span>
+          </p>
+          <p class="text-sm text-gray-500 truncate dark:text-gray-400">Bangui, RCA</p>
+       </div>
+       <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+          <button id="dropdownMenuIconHorizontalButton" data-dropdown-toggle="dropdownDotsHorizontal" class="inline-flex items-center px-2 py-1 text-sm font-medium text-center text-gray-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3"><path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></svg></button>
+       </div>
     </div>
-
-  </div>
-
-  <!-- Sidebar area (hidden on tablets and smartphones, visible on large screens) -->
-  <div class="hidden lg:block lg:col-span-1 h-screen sticky top-4">
-    <!-- Users -->
-    <div class="p-4 mb-0">
-      <h2 class="mb-2 text-lg font-semibold text-gray-500 dark:text-white">People to follow</h2>
-
-
-<ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
-  <li class="py-2 sm:py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
-    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse">
-      <div class="flex-shrink-0">
-        <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
-      </div>
-      <div class="flex-1 min-w-0">
-        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-          Neil Sims <span class="inline-flex text-sm font-medium text-blue-500 items-center">
-          @derkos <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></span>
-        </p>
-        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-          email@flowbite.com
-        </p>
-      </div>
-    </a>
   </li>
-  <li class="py-2 sm:py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
-    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse">
-      <div class="flex-shrink-0">
-        <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
-      </div>
-      <div class="flex-1 min-w-0">
-        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-          Bonnie Green <span class="inline-flex text-sm font-medium text-blue-500 items-center">
-          @derkos <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></span>
-        </p>
-        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-          Kampala, Uganda
-        </p>
-      </div>
-    </a>
+  <li class="py-3 sm:py-4">
+    <div class="flex items-center space-x-4 rtl:space-x-reverse">
+       <div class="flex-shrink-0">
+          <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
+       </div>
+       <div class="flex-1 min-w-0">
+          <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+            Michael Gough
+            <span class="inline-flex text-sm font-medium text-blue-500 items-center">@derkos <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></span>
+          </p>
+          <p class="text-sm text-gray-500 truncate dark:text-gray-400">Paris, France</p>
+       </div>
+       <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+          <button id="dropdownMenuIconHorizontalButton" data-dropdown-toggle="dropdownDotsHorizontal" class="inline-flex items-center px-2 py-1 text-sm font-medium text-center text-gray-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3"><path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></svg></button>
+       </div>
+    </div>
   </li>
-  <li class="py-2 sm:py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
-    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse">
-      <div class="flex-shrink-0">
-        <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
-      </div>
-      <div class="flex-1 min-w-0">
-        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-          Lana Byrd <span class="inline-flex text-sm font-medium text-blue-500 items-center">
-          @derkos <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></span>
-        </p>
-        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-          email@flowbite.com
-        </p>
-      </div>
-    </a>
+  <li class="py-3 sm:py-4">
+    <div class="flex items-center space-x-4 rtl:space-x-reverse">
+       <div class="flex-shrink-0">
+          <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
+       </div>
+       <div class="flex-1 min-w-0">
+          <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+            Thomas Lean
+            <span class="inline-flex text-sm font-medium text-blue-500 items-center">@derkos <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></span>
+          </p>
+          <p class="text-sm text-gray-500 truncate dark:text-gray-400">Kampala, Uganda</p>
+       </div>
+       <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+          <button id="dropdownMenuIconHorizontalButton" data-dropdown-toggle="dropdownDotsHorizontal" class="inline-flex items-center px-2 py-1 text-sm font-medium text-center text-gray-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3"><path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></svg></button>
+       </div>
+    </div>
   </li>
-  <li class="p-2 hover:bg-gray-100 dark:hover:bg-gray-700">
-    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse block text-m font-medium text-blue-500 dark:text-white">View all</a>
+  <li class="pt-3 pb-0 sm:pt-4">
+    <div class="flex items-center space-x-4 rtl:space-x-reverse">
+       <div class="flex-shrink-0">
+          <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
+       </div>
+       <div class="flex-1 min-w-0">
+          <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+            Lana Byrd
+            <span class="inline-flex text-sm font-medium text-blue-500 items-center">@derkos <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></span>
+          </p>
+          <p class="text-sm text-gray-500 truncate dark:text-gray-400">New York, USA</p>
+       </div>
+       <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+          <button id="dropdownMenuIconHorizontalButton" data-dropdown-toggle="dropdownDotsHorizontal" class="inline-flex items-center px-2 py-1 text-sm font-medium text-center text-gray-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3"><path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></svg></button>
+       </div>
+    </div>
   </li>
 </ul>
 
-
-
-      
     </div>
-    <!-- Pages -->
-    <div class="p-4 mb-4">
-      <h2 class="mb-2 text-lg font-semibold text-gray-500 dark:text-white">Popular pages</h2>
+    <div class="hidden px-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="pages" role="tabpanel" aria-labelledby="pages-tab">
 
 
 <ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
@@ -682,13 +561,13 @@
       </div>
     </a>
   </li>
-  <li class="p-2 hover:bg-gray-100 dark:hover:bg-gray-700">
-    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse block text-m font-medium text-blue-500 dark:text-white">View all</a>
-  </li>
 </ul>
 
+
     </div>
-  </div>
+</div>
+
+
 </div>
 
 
