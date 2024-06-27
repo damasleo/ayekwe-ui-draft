@@ -17,6 +17,7 @@
 
   </head>
   <body class="bg-gray-50 dark:bg-gray-800">
+
     <nav class="fixed top-0 w-full bg-white sm:hidden border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
       <div class="px-3 py-3 lg:px-5 lg:pl-3">
         <div class="flex items-center justify-between">
@@ -131,6 +132,8 @@
       </div>
     </nav>
     
+      <!-- class="fixed top-0 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700" -->
+
     <aside
       id="logo-sidebar"
       class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
@@ -264,13 +267,501 @@
     <div class="p-0 pt-2 mt-16 sm:mt-0 sm:p-4 sm:ml-64">
       
         
-<div class="grid grid-cols-1 lg:grid-cols-1 gap-4 mb-2">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-2">
   <!-- Main content area (2/3 of the width on large screens, full width on smaller screens) -->
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus scelerisque commodo. Etiam nec lorem turpis. Vestibulum sed suscipit enim. Sed in sodales ante. Aliquam erat volutpat. Phasellus malesuada tortor sit amet purus tincidunt dignissim. Pellentesque vitae ante varius, maximus odio vitae, finibus risus. Phasellus eget luctus arcu. Etiam at efficitur nisi. Sed interdum posuere justo ut euismod. Donec scelerisque dignissim feugiat. Nulla vel maximus est, eu facilisis nulla. Proin et urna at odio sodales condimentum.</p>
+  <div class="lg:col-span-2">
+
+    <!-- Profile Section -->
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-4 mb-2 sm:mt-4" style="box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);">
+      <!-- Header -->
+      <div class="">
+        <div class="flex items-center">
+          <img class="w-24 h-24 lg:w-30 lg:h-30 rounded-lg border-4 border-gray-300 dark:border-gray-800 mr-4" src="static/placeholder.png" alt="User avatar">
+
+          <div>
+            <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Ayekwe community</h2>
+            <div>
+              <p class="inline-flex text-sm text-gray-500 dark:text-gray-400">Information Technology <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white self-center ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></p>
+            </div>
+
+            <button type="button" class="ml-auto text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-3 py-1 me-2 my-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Follow</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Info -->
+      <div class="px-0 lg:px-4">
+        <!-- <p class="mt-4 text-gray-900 dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus scelerisque commodo. Etiam nec lorem turpis. Sed in sodales ante. Aliquam erat volutpat. Phasellus malesuada tortor sit amet purus tincidunt dignissim. Pellentesque vitae ante varius, maximus odio vitae, finibus risus.</p>
+
+        <div class="flex items-center text-gray-500 dark:text-gray-400 mt-4">
+          <svg class="w-6 h-6 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/></svg>
+          <span>Kampala, Uganda</span>
+        </div> -->
+
+          <div class="flex items-center mt-4 text-gray-500 dark:text-gray-400 text-sm font-medium">
+            <div class="flex items-center mr-6">
+                <svg class="w-6 h-6 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z" clip-rule="evenodd"/></svg>
+                <span>500 Followers</span>
+            </div>
+            <!-- <div class="flex items-center mr-6">
+                <svg class="w-6 h-6 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z" clip-rule="evenodd"/></svg>
+                <span>300 Following</span>
+            </div> -->
+
+            <div class="flex items-center ml-auto">
+              <button id="dropdownMenuIconHorizontalButton" data-dropdown-toggle="dropdownDotsHorizontal" class="inline-flex items-center px-2 py-1 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3"><path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/></svg></button>
+
+              <!-- Dropdown menu -->
+              <div id="dropdownDotsHorizontal" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconHorizontalButton">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Share</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Message</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Email</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a></li>
+                </ul>
+                <div class="py-2">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit profile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <p class="mt-3 text-gray-900 dark:text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus scelerisque commodo. Etiam nec lorem turpis. Sed in sodales ante. Aliquam erat volutpat. Phasellus malesuada tortor sit amet purus tincidunt dignissim. Pellentesque vitae ante varius, maximus odio vitae, finibus risus.</p>
+
+        <div class="flex items-center text-gray-500 dark:text-gray-400 mt-4">
+          <svg class="w-6 h-6 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd"/></svg>
+          <span>Kampala, Uganda</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- User's Posts -->
+
+
+    <!-- <div class="hidden sm:block md:flex mt-4">
+      <ul class="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
+        <li>
+          <a href="#" class="border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 inline-flex items-center px-4 py-2 rounded-lg hover:text-gray-900 bg-gray-50 hover:bg-gray-100 w-full dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"><svg class="flex-shrink-0 w-6 h-6 text-gray-800 dark:text-white mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/></svg>What's happening?</a>
+        </li>
+      </ul>
+    </div> -->
+
+
+    <!-- Example of a post card similar to Facebook -->
+    <div class="bg-white dark:bg-gray-800 rounded shadow-none p-4 mb-2 sm:mt-4" style="box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);">
+      <div class="flex-1">
+        <div class="flex items-center justify-between">
+          <a href="#" class="flex items-start">
+            <img class="w-10 h-10 rounded mr-4" src="static/placeholder.png" alt="User avatar">
+            <div>
+              <h3 class="text-m font-semibold text-gray-900 dark:text-white">
+                Username <span class="inline-flex text-sm font-medium text-blue-500 items-center">
+                  @derkos 
+                  <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg>
+                </span>
+              </h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">2h • <span class="text-blue-500">#Public</span></p>
+            </div>
+          </a>
+
+          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-full hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 4 15">
+          <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+          </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdownDots" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Share</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Repost</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
+                </li>
+              </ul>
+              <div class="py-2">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit Post</a>
+              </div>
+          </div>
+
+
+        </div>
+        <p class="mt-2 text-gray-900 dark:text-white">This is an example post content similar to what you would see on Facebook. It can include text, hashtags, links, and images.</p>
+
+        <span class="text-blue-500">#Ayekwe #RCA #Bangui #Public</span>
+
+        <a href="detail.html"><img class="rounded-lg mt-2" style="height: auto;width: 100%;background-size: cover;background-repeat: no-repeat;" src="static/01.jpg" alt="image description"></a>
+
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">100 likes • 24 comments • reposted</p>
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center mt-2 text-gray-500 dark:text-gray-400">
+            <div class="flex items-center mr-6">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/></svg>
+            </div>
+            <div class="flex items-center mr-6">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/></svg>
+            </div>
+
+          </div>
+          <div class="flex items-center">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 21-5-4-5 4V3.889a.92.92 0 0 1 .244-.629.808.808 0 0 1 .59-.26h8.333a.81.81 0 0 1 .589.26.92.92 0 0 1 .244.63V21Z"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Add more post content items here -->
+    <div class="bg-white dark:bg-gray-800 rounded shadow-none p-4 mb-2 sm:mt-4" style="box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);">
+      <div class="flex-1">
+        <div class="flex items-center justify-between">
+          <a href="#" class="flex items-start">
+            <img class="w-10 h-10 rounded mr-4" src="static/placeholder.png" alt="User avatar">
+            <div>
+              <h3 class="text-m font-semibold text-gray-900 dark:text-white">
+                Username <span class="inline-flex text-sm font-medium text-blue-500 items-center">
+                  @derkos 
+                  <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg>
+                </span>
+              </h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">2h • <span class="text-blue-500">#Public</span></p>
+            </div>
+          </a>
+
+          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots1" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-full hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 4 15">
+          <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+          </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdownDots1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Share</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Repost</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
+                </li>
+              </ul>
+              <div class="py-2">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit Post</a>
+              </div>
+          </div>
+
+
+        </div>
+        <p class="mt-2 text-gray-900 dark:text-white">This is an example post content similar to what you would see on Facebook. It can include text, hashtags, links, and images.</p>
+
+        <span class="text-blue-500">#Ayekwe #RCA #Bangui #Public</span>
+
+        <a href="detail.html"><img class="rounded-lg mt-2" style="height: auto;width: 100%;background-size: cover;background-repeat: no-repeat;" src="static/02.jpg" alt="image description"></a>
+
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">100 likes • 24 comments • reposted</p>
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center mt-2 text-gray-500 dark:text-gray-400">
+            <div class="flex items-center mr-6">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/></svg>
+            </div>
+            <div class="flex items-center mr-6">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/></svg>
+            </div>
+
+          </div>
+          <div class="flex items-center">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 21-5-4-5 4V3.889a.92.92 0 0 1 .244-.629.808.808 0 0 1 .59-.26h8.333a.81.81 0 0 1 .589.26.92.92 0 0 1 .244.63V21Z"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 rounded shadow-none p-4 mb-2 sm:mt-4" style="box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);">
+      <div class="flex-1">
+        <div class="flex items-center justify-between">
+          <a href="#" class="flex items-start">
+            <img class="w-10 h-10 rounded mr-4" src="static/placeholder.png" alt="User avatar">
+            <div>
+              <h3 class="text-m font-semibold text-gray-900 dark:text-white">
+                Username <span class="inline-flex text-sm font-medium text-blue-500 items-center">
+                  @derkos 
+                  <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg>
+                </span>
+              </h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">2h • <span class="text-blue-500">#Public</span></p>
+            </div>
+          </a>
+
+          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots1" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-full hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 4 15">
+          <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+          </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdownDots1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Share</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Repost</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
+                </li>
+              </ul>
+              <div class="py-2">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit Post</a>
+              </div>
+          </div>
+
+
+        </div>
+        <p class="mt-2 text-gray-900 dark:text-white">This is an example post content similar to what you would see on Facebook. It can include text, hashtags, links, and images.</p>
+
+        <span class="text-blue-500">#Ayekwe #RCA #Bangui #Public</span>
+
+        <a href="detail.html"><img class="rounded-lg mt-2" style="height: auto;width: 100%;background-size: cover;background-repeat: no-repeat;" src="static/03.jpg" alt="image description"></a>
+
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">100 likes • 24 comments • reposted</p>
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center mt-2 text-gray-500 dark:text-gray-400">
+            <div class="flex items-center mr-6">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/></svg>
+            </div>
+            <div class="flex items-center mr-6">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/></svg>
+            </div>
+
+          </div>
+          <div class="flex items-center">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 21-5-4-5 4V3.889a.92.92 0 0 1 .244-.629.808.808 0 0 1 .59-.26h8.333a.81.81 0 0 1 .589.26.92.92 0 0 1 .244.63V21Z"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bg-white dark:bg-gray-800 rounded shadow-none p-4 mb-2 sm:mt-4" style="box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);">
+      <div class="flex-1">
+        <div class="flex items-center justify-between">
+          <a href="#" class="flex items-start">
+            <img class="w-10 h-10 rounded mr-4" src="static/placeholder.png" alt="User avatar">
+            <div>
+              <h3 class="text-m font-semibold text-gray-900 dark:text-white">
+                Username <span class="inline-flex text-sm font-medium text-blue-500 items-center">
+                  @derkos 
+                  <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg>
+                </span>
+              </h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">2h • <span class="text-blue-500">#Public</span></p>
+            </div>
+          </a>
+
+          <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots1" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-full hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 4 15">
+          <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+          </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdownDots1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Share</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Repost</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Report</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
+                </li>
+              </ul>
+              <div class="py-2">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit Post</a>
+              </div>
+          </div>
+
+
+        </div>
+        <p class="mt-2 text-gray-900 dark:text-white">This is an example post content similar to what you would see on Facebook. It can include text, hashtags, links, and images.</p>
+
+        <span class="text-blue-500">#Ayekwe #RCA #Bangui #Public</span>
+
+        <a href="detail.html"><img class="rounded-lg mt-2" style="height: auto;width: 100%;background-size: cover;background-repeat: no-repeat;" src="static/04.jpg" alt="image description"></a>
+
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">100 likes • 24 comments • reposted</p>
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center mt-2 text-gray-500 dark:text-gray-400">
+            <div class="flex items-center mr-6">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/></svg>
+            </div>
+            <div class="flex items-center mr-6">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.556 8.5h8m-8 3.5H12m7.111-7H4.89a.896.896 0 0 0-.629.256.868.868 0 0 0-.26.619v9.25c0 .232.094.455.26.619A.896.896 0 0 0 4.89 16H9l3 4 3-4h4.111a.896.896 0 0 0 .629-.256.868.868 0 0 0 .26-.619v-9.25a.868.868 0 0 0-.26-.619.896.896 0 0 0-.63-.256Z"/></svg>
+            </div>
+
+          </div>
+          <div class="flex items-center">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 21-5-4-5 4V3.889a.92.92 0 0 1 .244-.629.808.808 0 0 1 .59-.26h8.333a.81.81 0 0 1 .589.26.92.92 0 0 1 .244.63V21Z"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
 
   
-</div>
 
+    <!-- Sidebar area (hidden on tablets and smartphones, visible on large screens) -->
+  <div class="hidden lg:block lg:col-span-1 h-screen sticky top-4">
+    <div class="p-4 mb-0">
+      <h2 class="mb-2 text-lg font-semibold text-gray-500 dark:text-white">People to follow</h2>
+
+
+<ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
+  <li class="py-2 sm:py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse">
+      <div class="flex-shrink-0">
+        <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
+      </div>
+      <div class="flex-1 min-w-0">
+        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+          Neil Sims <span class="inline-flex text-sm font-medium text-blue-500 items-center">
+          @derkos <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></span>
+        </p>
+        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+          email@flowbite.com
+        </p>
+      </div>
+    </a>
+  </li>
+  <li class="py-2 sm:py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse">
+      <div class="flex-shrink-0">
+        <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
+      </div>
+      <div class="flex-1 min-w-0">
+        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+          Bonnie Green <span class="inline-flex text-sm font-medium text-blue-500 items-center">
+          @derkos <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></span>
+        </p>
+        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+          Kampala, Uganda
+        </p>
+      </div>
+    </a>
+  </li>
+  <li class="py-2 sm:py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse">
+      <div class="flex-shrink-0">
+        <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
+      </div>
+      <div class="flex-1 min-w-0">
+        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+          Lana Byrd <span class="inline-flex text-sm font-medium text-blue-500 items-center">
+          @derkos <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg></span>
+        </p>
+        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+          email@flowbite.com
+        </p>
+      </div>
+    </a>
+  </li>
+  <li class="p-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse block text-m font-medium text-blue-500 dark:text-white">View all</a>
+  </li>
+</ul>
+
+
+
+      
+    </div>
+    <div class="p-4 mb-4">
+      <h2 class="mb-2 text-lg font-semibold text-gray-500 dark:text-white">Popular pages</h2>
+
+
+<ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
+  <li class="py-2 sm:py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse">
+      <div class="flex-shrink-0">
+        <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
+      </div>
+      <div class="flex-1 min-w-0">
+        <p class="text-sm font-medium text-gray-900 truncate dark:text-white inline-flex items-center">
+          Ayekwe community <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg>
+        </p>
+        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+          email@flowbite.com
+        </p>
+      </div>
+    </a>
+  </li>
+  <li class="py-2 sm:py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse">
+      <div class="flex-shrink-0">
+        <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
+      </div>
+      <div class="flex-1 min-w-0">
+        <p class="text-sm font-medium text-gray-900 truncate dark:text-white inline-flex items-center">
+          Daxemare collection <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg>
+        </p>
+        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+          Kampala, Uganda
+        </p>
+      </div>
+    </a>
+  </li>
+  <li class="py-2 sm:py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse">
+      <div class="flex-shrink-0">
+        <img class="w-10 h-10 rounded" src="static/placeholder.png" alt="Neil image">
+      </div>
+      <div class="flex-1 min-w-0">
+        <p class="text-sm font-medium text-gray-900 truncate dark:text-white inline-flex items-center">
+          Cavendish University
+          <svg class="w-[18px] h-[18px] text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/></svg>
+        </p>
+        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+          email@flowbite.com
+        </p>
+      </div>
+    </a>
+  </li>
+  <li class="p-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+    <a href="#" class="flex items-center space-x-4 rtl:space-x-reverse block text-m font-medium text-blue-500 dark:text-white">View all</a>
+  </li>
+</ul>
+
+    </div>
+  </div>
+
+
+</div>
 
 
 
